@@ -19,8 +19,8 @@ function main() {
   function buildSplash() {
 
     splashMain = buildDom(`
-      <main>
-        <h1>Eternal Enemies</h1>
+      <main class="start-screen">
+        <h1>eternal enemies</h1>
         <button>Start</button>
       </main>
     `);
@@ -29,6 +29,7 @@ function main() {
 
     var button = splashMain.querySelector('button');
     button.addEventListener('click', startGame);
+
   }
 
   function destoySplash() {
@@ -64,9 +65,9 @@ function main() {
   function buildGameOver(score) {
 
     gameOverMain = buildDom(`
-      <main>
-        <h1>Game over</h1>
-        <p>Your score: <span></span></p>
+      <main class="end-screen">
+        <h1>game over!!!</h1>
+        <p>Your score was <span></span></p>
         <button>Restart</button>
       </main>
     `);

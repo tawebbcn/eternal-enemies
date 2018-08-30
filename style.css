@@ -23,7 +23,9 @@ body {
   line-height: 147%;
 }
 
-h1 {}
+h1 {
+  text-align: center;
+}
 
 h2 {}
 
@@ -31,6 +33,7 @@ h3 {}
 
 p {
   margin: 0;
+  text-align: center;
 }
 
 
@@ -65,9 +68,10 @@ html, body {
 }
 
 .game header {
-  height: 50px;
+  height: 150px;
   display: flex;
   align-items: center;
+  padding: 10px 0;
 }
 
 .game .lives {
@@ -79,13 +83,104 @@ html, body {
 }
 
 .game .label {
-  font-weight: bold;
+  flex: 1;
+  font-size: 24px;
+  color: #d1430c;
+  text-transform: lowercase;
 }
 
 .game .value {
-  font-style: italic;
+  font-style: bold;
+  font-size: 32px;
+  padding: 20px;
+  border: 3px solid #d1430c;
+  color: #d1430c;
+  display: inline-block;
+  width: 100px;
+  margin: 10px 10px 15px 10px;
 }
 
 .game .canvas {
   flex: 1;
+  margin: 10px;
+  border: 3px solid #d1430c;
+
+}
+
+
+/* ---- START SCREEN ---- */
+
+.start-screen {
+  margin: 0 40px;
+  height: 100%;
+}
+
+.start-screen button {
+  border: 3px solid #fa5c1d;
+  color: #fa5c1d;
+  padding: 10px 30px;
+  display: block;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.start-screen button:hover {
+  color: white;
+  background-color: #fa5c1d;
+  cursor: pointer;
+}
+
+.start-screen button:active {
+  border: 3px solid #d1430c;
+  background-color: #d1430c;
+  
+}
+
+.start-screen button:focus {
+  outline: none;
+}
+
+.start-screen button[disabled] {
+  background-color: #ccc;
+  cursor: default;
+}
+
+.start-screen h1 {
+  padding-top: 300px;
+}
+
+/* ---- END SCREEN ---- */
+
+.end-screen {
+  margin: 0 30px;
+  height: 100%;
+}
+
+.end-screen h1 {
+  padding-top: 280px;
+}
+
+.end-screen button {
+  border: 3px solid #fa5c1d;
+  color: #fa5c1d;
+  padding: 10px 30px;
+  display: block;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.end-screen button:hover {
+  color: white;
+  background-color: #fa5c1d;
+  cursor: pointer;
+}
+
+.end-screen button:active {
+  border: 3px solid #d1430c;
+  background-color: #d1430c;
+  
+}
+
+.end-screen button:focus {
+  outline: none;
 }
