@@ -22,10 +22,10 @@ Player.prototype.setDirection = function (direction) {
 Player.prototype.collidesWithEnemy = function (enemy) {
   var self = this;
 
-  const collidesRight = self.x + self.size / 2 > enemy.x - enemy.size / 2;
-  const collidesLeft = self.x - self.size / 2 < enemy.x + enemy.size / 2;
-  const collidesTop = self.y - self.size / 2 < enemy.y + enemy.size / 2;
-  const collidesBottom = self.y + self.size / 2 > enemy.y - enemy.size / 2;
+  var collidesRight = self.x + self.size / 2 > enemy.x - enemy.size / 2;
+  var collidesLeft = self.x - self.size / 2 < enemy.x + enemy.size / 2;
+  var collidesTop = self.y - self.size / 2 < enemy.y + enemy.size / 2;
+  var collidesBottom = self.y + self.size / 2 > enemy.y - enemy.size / 2;
 
   if (collidesLeft && collidesRight && collidesTop && collidesBottom) {
     return true;
